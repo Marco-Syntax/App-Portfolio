@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Über Mich</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        .back-arrow {
+            position: fixed;
+            top: 40px;
+            left: 40px;
+            z-index: 9999;
+            cursor: pointer;
+            font-size: 24px;
+            color: white;
+            text-decoration: none;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        }
+
+        .back-arrow:hover {
+            text-decoration: underline;
+        }
+        
+    </style>
+</head>
+<body>
+    <a href="javascript:history.go(-1)" class="back-arrow">&#8592; Zurück</a>
+
+    <main class="main">
+        <img src="meneu.png" alt="meneu" >
+    </main>
+
+    <footer class="footer">
+    </footer>
+</body>
+</html>
