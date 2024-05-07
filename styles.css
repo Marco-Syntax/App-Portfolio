@@ -6,10 +6,10 @@ body {
     background-image: url('background.jpg'); /* Hintergrundbild */
     background-size: cover;
     background-repeat: no-repeat;
+    background: linear-gradient(135deg, #A6CAFF, #1A73E8); /* Farbverlauf für Header und Footer */
 }
 
 .header, .footer {
-    background: linear-gradient(135deg, #A6CAFF, #1A73E8); /* Farbverlauf für Header und Footer */
     color: #FFFFFF; /* Weiße Textfarbe */
     padding: 20px;
     text-align: center;
