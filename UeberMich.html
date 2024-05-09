@@ -27,16 +27,54 @@
             text-decoration: underline;
         }
         
+        /* Anpassung der Größe der Social-Media-Icons */
+        .social-links img {
+            width: 40px;
+            height: 40px;
+        }
     </style>
 </head>
 <body>
-    <a href="javascript:history.go(-1)" class="back-arrow">&#8592; Zurück</a>
 
     <main class="main">
         <img src="/public/portfolioaboutme.png" alt="portfolioaboutme" >
     </main>
 
+    <!-- Include des Footers -->
     <footer class="footer">
+        <nav>
+            <ul>
+                <li><a href="UeberMich.html" id="about-link">Über Mich</a></li>
+                <li><a href="Motivation.html">Motivation</a></li>
+                <li><a href="Skills.html">Skills</a></li>
+                <li><a href="Projekt.html">Projekt</a></li>
+                <li><a href="AppFeatures.html">App Features</a></li>
+            </ul>
+        </nav>
+        <div class="social-links">
+            <!-- GitHub-Icon -->
+            <a href="https://github.com/Marco-Syntax?tab=repositories"><img src="/public/ic_github.png" alt="GitHub"></a>
+            <!-- LinkedIn-Icon -->
+            <a href="https://www.linkedin.com/in/marco-grimme"><img src="/public/ic_linkedin.png" alt="LinkedIn"></a>
+            <!-- E-Mail-Icon -->
+            <a href="mailto:marcogrimme@gmx.de"><img src="/public/emailIcon.png" alt="emailIcon"></a>
+        </div>
+        <button class="more-button" onclick="window.location.href='https://github.com/Marco-Syntax/AdventureWorld-APP'">Zum Repository</button>
+        <p>&copy; 2024 Marco Grimme</p>
     </footer>
+
+    <script>
+        // JavaScript, um den Link für die "Über Mich"-Seite entsprechend anzupassen
+        window.addEventListener('DOMContentLoaded', (event) => {
+            var currentPage = window.location.pathname;
+            var aboutLink = document.getElementById('about-link');
+
+            if (currentPage.includes('UeberMich.html')) {
+                aboutLink.setAttribute('href', '/'); // Anpassung des Links für die Startseite
+                aboutLink.innerHTML = 'Start'; // Anpassung des Link-Textes
+            }
+        });
+    </script>
+
 </body>
 </html>
