@@ -9,6 +9,7 @@
         body {
             margin: 0;
             padding: 0;
+            font-family: Arial, sans-serif;
         }
         .main {
             text-align: center;
@@ -17,14 +18,14 @@
         img {
             width: 100%;
             height: auto;
-            border-radius: 10px; 
+            border-radius: 20px; 
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
         }
 
         /* Anpassung der Größe der Social-Media-Icons */
         .social-links img {
-            width: 40px; /* Hier kannst du die Breite anpassen */
-            height: auto; /* Die Höhe wird automatisch anhand der Breite angepasst */
+            width: 40px;
+            height: auto;
         }
     </style>
 </head>
@@ -37,36 +38,19 @@
     <footer class="footer">
         <nav>
             <ul>
+                <li><a href="index.html">Start</a></li>
                 <li><a href="UeberMich.html">Über Mich</a></li>
                 <li><a href="Motivation.html">Motivation</a></li>
                 <li><a href="Skills.html">Skills</a></li>
-                <li><a href="Projekt.html">Projekt</a></li>
-                <li><a href="AppFeatures.html" id="features-link">App Features</a></li> <!-- Hinzufügen einer ID für den Button -->
+                <li><a href="Projekt.html">Projekt</a></li> <!-- Änderung des Links für den Button -->
             </ul>
         </nav>
         <div class="social-links">
-            <!-- GitHub-Icon -->
-            <a href="https://github.com/Marco-Syntax?tab=repositories"><img src="/public/ic_github.png" alt="GitHub"></a>
-            <!-- LinkedIn-Icon -->
             <a href="https://www.linkedin.com/in/marco-grimme"><img src="/public/ic_linkedin.png" alt="LinkedIn"></a>
-            <!-- E-Mail-Icon -->
             <a href="mailto:marcogrimme@gmx.de"><img src="/public/emailIcon.png" alt="emailIcon"></a>
+            <a href="https://github.com/Marco-Syntax?tab=repositories"><img src="/public/ic_github.png" alt="GitHub"></a>
         </div>
-        <button class="more-button" onclick="window.location.href='https://github.com/Marco-Syntax/AdventureWorld-APP'">Zum Repository</button>
         <p>&copy; 2024 Marco Grimme</p>
     </footer>
-
-    <script>
-        // JavaScript, um den Link-Text für die App Features Seite entsprechend anzupassen
-        window.addEventListener('DOMContentLoaded', () => {
-            var currentPage = window.location.pathname;
-            var featuresLink = document.getElementById('features-link');
-
-            if (currentPage.includes('AppFeatures.html')) {
-                featuresLink.innerHTML = 'Start'; // Ändern des Link-Textes
-                featuresLink.setAttribute('href', '/'); // Ändern des Link-Ziels
-            }
-        });
-    </script>
 </body>
 </html>
