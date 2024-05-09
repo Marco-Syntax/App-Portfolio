@@ -151,3 +151,6 @@ nav ul li a:hover {
     margin-bottom: 10px; /* Abstand zum Text verringern */
     margin-top: 20px; /* Abstand nach oben hinzufügen */
 }
+.main img {
+    border-radius: 10px; /* Ändere den Wert nach Bedarf */
+}
