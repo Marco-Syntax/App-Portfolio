@@ -157,5 +157,5 @@ nav ul li a:hover {
 .social-links img {
     width: 40px;
     height: 40px;
-    border-radius: 50%; /* Alle Icons rund machen */
+    border-radius: 40%; /* Alle Icons rund machen */
 }
