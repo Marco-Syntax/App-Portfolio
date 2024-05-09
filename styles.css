@@ -154,3 +154,8 @@ nav ul li a:hover {
 .main img {
     border-radius: 10px; /* Ändere den Wert nach Bedarf */
 }
+.social-links img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Alle Icons rund machen */
+}
