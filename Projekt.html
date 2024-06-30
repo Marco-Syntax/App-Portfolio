@@ -10,16 +10,70 @@
             text-align: center;
             padding: 20px;
         }
-        img {
-            width: 70%;
+
+        .main img {
+            max-width: 100%;
             height: auto;
-            border-radius: 20px; 
+            border-radius: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         .social-links img {
             width: 40px;
             height: auto;
+        }
+
+        footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+        }
+
+        footer nav ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            list-style-type: none;
+            padding: 0;
+            margin: 10px 0;
+        }
+
+        footer nav ul li {
+            margin: 5px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+
+        .more-button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+        }
+
+        @media only screen and (max-width: 600px) {
+            footer nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            footer nav ul li {
+                margin: 10px 0;
+            }
+
+            .more-button {
+                width: 100%;
+                text-align: center;
+            }
         }
     </style>
 </head>
@@ -38,14 +92,15 @@
                 <li><a href="Skills.html">Skills</a></li>
                 <li><a href="AppFeatures.html">IOS-Projekte</a></li>
                 <li><a href="Projekt-Intellij.html">IntelliJ-Projekt</a></li>
-
             </ul>
         </nav>
         <div class="social-links">
             <a href="https://www.linkedin.com/in/marco-grimme"><img src="/public/ic_linkedin.png" alt="LinkedIn"></a>
-            <a href="mailto:mgrimme954@gmail.com"><img src="/public/emailIcon.png" alt="emailIcon"></a>
+            <a href="mailto:mgrimme954@gmail.com"><img src="/public/emailIcon.png" alt="E-Mail"></a>
             <a href="https://github.com/Marco-Syntax?tab=repositories"><img src="/public/ic_github.png" alt="GitHub"></a>
         </div>
         <button class="more-button" onclick="window.location.href='https://github.com/Marco-Syntax?tab=repositories'">Zu meinen GitHub-Repositories</button>
         <p>&copy; 2024 Marco Grimme</p>
     </footer>
+</body>
+</html>
